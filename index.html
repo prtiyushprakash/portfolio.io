@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Port<span>folio</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- header ends here -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Aman Kumar</h1>
+        <h3>And I'm a <span class="tube">Frontend Developer</span></h3>
+        <p>This is a self-made portfolio to showcase my front-end skills.</p>
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+      <div class="home-img">
+        <img src="./images/main.jpg" alt="Photo" />
+      </div>
+    </section>
+    <!-- About section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./images/about.jpg" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me!</span></h2>
+        <h3>Frontend Developer!</h3>
+        <p>
+          "Welcome to my portfolio website! I'm Aman Kumar , a passionate
+          front-end Developer. I specialize in creating visually stunning and
+          engaging experiences that push the boundaries of design and
+          innovation. With a focus on attention to detail, effective
+          communication, and user experience, I strive to deliver impactful
+          solutions that inspire and captivate audiences. Thank you for visiting
+          my portfolio, and I look forward to discussing how we can collaborate
+          on bringing your ideas to life!"
+        </p>
+        <a href="./html/aboutme.html" class="btn">Read More</a>
+      </div>
+    </section>
+    <!--skill section-->
+    <section class="skills" id="skills">
+      <div class="skill-content">
+        <h2 class="heading">Skil<span>ls.</span></h2>
+      </div>
+      <div class="skill-container">
+        <div class="skill-box">
+          <i class="bx bxl-git"></i>
+          <h3>Git version control</h3>
+          <p>
+            Version control is the practice of tracking and managing changes to
+            software code.
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="c-logo"><img src="./images/clogo.png" /></i>
+          <h3>Cpp Programming</h3>
+          <p>
+            C++ is a cross-platform language that can be used to create
+            high-performance applications.
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-html5"></i>
+          <h3>Html</h3>
+          <p>
+            HTML is the most basic building block of the Web, defines meaning &
+            structure of web content.
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-java"></i>
+          <h3>Java</h3>
+          <p>
+            Java is a general-purpose, class-based, object-oriented and secure
+            programming language.
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-javascript"></i>
+          <h3>Javascript</h3>
+          <p>
+            Js is a programming language,one ofthe core technologies of WWW,
+            alongside HTML and CSS.
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="bx bxl-css3"></i>
+          <h3>CSS</h3>
+          <p>
+            CSS, is a simply designed language to simplify the process of making
+            web pages presentable.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- project section-->
+    <section class="project" id="project">
+      <div class="project-content">
+        <h2 class="heading">My <span>Projects.</span></h2>
+      </div>
+      <div class="project-container">
+        <div class="project-box">
+          <img src="./images/portfolio.png" alt="img" />
+          <div class="project-layer">
+            <h4>Portfolio</h4>
+            <p>
+              This is a self developed Portfolio to showcase my frontend skills.
+            </p>
+            <a href="#home"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img src="./images/oceanshore.png" alt="img" />
+          <div class="project-layer">
+            <h4>Oceanshore</h4>
+            <p>
+              A team work to spread awareness about Govt. schemes related to
+              Education
+            </p>
+            <a href="https://amankumar016.github.io/Oceanshore.github.io/"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--contact section-->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form onsubmit="sendEmail(); this.reset(); return false;">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" id="name" required />
+          <input type="email" placeholder="Email Address" id="email" required />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" id="num" />
+          <input type="text" placeholder="Email Subject" id="sub" required />
+        </div>
+        <textarea
+          name=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          id="message"
+          required
+        ></textarea>
+
+        <input type="submit" value="Send Message" class="btn"/>
+      </form>
+    </section>
+
+    <!--footer section -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Aman Kumar | All Rights Reserved.</p>
+      </div>
+      <div class="footer-icon">
+        <a href="#home"><i class="bx bx-home"></i></a>
+      </div>
+    </footer>
+
+    <!--scroll revel-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--smtp js-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          SecureToken: "4ef039c1-2ee1-46f8-8b16-89e34a669e49",
+          To: "prtiyushparkash@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "Contact message",
+          Body:
+            "Name: " +
+            document.getElementById("name").value +
+            "<br/> Email: " +
+            document.getElementById("email").value +
+            "<br/> Contact: " +
+            document.getElementById("num").value +
+            "<br/> Subject: " +
+            document.getElementById("sub").value +
+            "<br/> Message: " +
+            document.getElementById("message").value
+        }).then((message) => alert("Message sent succesfully"));
+      }
+    </script>
+    <!--custom js-->
+    <script src="../js/script.js"></script>
+  </body>
+</html>
