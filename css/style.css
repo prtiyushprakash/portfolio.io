@@ -548,6 +548,13 @@ span{
         justify-content: flex-end;
         min-height: auto;
     }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        text-align: center!important;
+        margin-top: 1.5rem;
+    }
    
 }
 @media(max-width:350px){
@@ -557,13 +564,7 @@ span{
     .about-img img{
         width: 90vw;
     }
-    .footer{
-        flex-direction: column-reverse;
-    }
-    .footer p{
-        text-align: center!important;
-        margin-top: 1.5rem;
-    }
+    
     .skill-container{
         margin: 2rem;
     }
